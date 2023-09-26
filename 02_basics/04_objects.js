@@ -35,7 +35,22 @@ const obj2 = { 3: "c", 4: "d" }
 const objMerge = {...obj1, ...obj2} //beest and latest syntax to merge
 //console.log(objMerge); 
 
-console.log(Object.keys(obj1)); //gives in array = ['1', '2']
-console.log(Object.values(obj1));//give values as  keys
+//console.log(Object.keys(obj1)); //gives in array = ['1', '2']
+//console.log(Object.values(obj1));//give values as  keys
 
-console.log(Regularuser.hasOwnProperty('isLoggedIn'));
+//console.log(Regularuser.hasOwnProperty('isLoggedIn'));
+
+//object de-structure
+
+const course = {
+    name: "BSE",
+    credit: "3 hr",
+    courseInstructor: "Shikhar"
+}
+
+//const {courseInstructor} = course
+//console.log(courseInstructor);
+
+const { courseInstructor: instructor} = course
+
+console.log(instructor);  
