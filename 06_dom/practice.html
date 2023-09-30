@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body style="background-color: black;">
+    <div class="parent">
+        
+    </div>
+</body>
+<script>
+    const divArray = ["div", "div", "div"]
+     const cls = ['div1', 'div2', 'div3']
+     const texts = ["I am div1", "I am div3", "I am div3"]
+    // console.log(divArray, clsNameArray);
+    var i = 0;
+    divArray.forEach( (div) =>
+    {
+        
+        const newDiv = document.createElement(div)
+        newDiv.className = cls[i];
+        newDiv.innerText = texts[i];
+        newDiv.style.color = "white"
+        const parent = document.querySelector('.parent')
+        parent.appendChild(newDiv)
+
+        i++;
+    } )
+    console.log(document.body);
+</script>
+</html>
