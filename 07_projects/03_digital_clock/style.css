@@ -1,0 +1,23 @@
+body
+{
+    background-color: #383737;
+    color: aliceblue;
+}
+.clk_div, h1  {
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+label{
+    font-size: 50px;
+}
+input{
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    background-color: yellowgreen;
+    color: rgb(237, 229, 229);
+    font-size: larger;
+    border-radius: 60px;
+    text-align: center;
+}
